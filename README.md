@@ -20,5 +20,5 @@ pod 'ZJDTimer','~> 1.0.3'
         // 在这根据自己的需求去刷新UI...
     }
     
-    // 详细使用请见ZJDTimerDemo
+### 详细使用请见ZJDTimerDemo
     
