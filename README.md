@@ -7,7 +7,6 @@ pod 'ZJDTimer','~> 1.0.3'
 ### 简单使用
     // 创建实例开始计时
     _timer = [ZJDTimer shared];
-    NSLog(@"%d",_timer.timeCount);
     [_timer startCount];
     
     // 通知接收时间变化的消息
@@ -15,8 +14,6 @@ pod 'ZJDTimer','~> 1.0.3'
 
     // 通知处理方法
     - (void)countTimeNoti:(NSNotification *)noti {
-        NSDictionary *dic = [noti object];
-        NSLog(@"count time --> %@",dic);
         // 在这根据自己的需求去刷新UI...
     }
     
