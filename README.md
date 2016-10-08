@@ -12,7 +12,7 @@ pod 'ZJDTimer','~> 1.0.3'
     // 通知接收时间变化的消息
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(countTimeNoti:) name:NNC_CountTimeNotification object:nil];
 
-    // 通知处理方法
+    // 通知
     - (void)countTimeNoti:(NSNotification *)noti {
         // 在这根据自己的需求去刷新UI...
     }
