@@ -5,15 +5,13 @@
 pod 'ZJDTimer','~> 1.0.3'
 
 ### 简单使用
-    // 创建实例
+    // 创建实例开始计时
     _timer = [ZJDTimer shared];
     NSLog(@"%d",_timer.timeCount);
-    // 开始计时
     [_timer startCount];
     
-    // 通知 接收时间变化的消息
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(countTimeNoti:)
-     name:NNC_CountTimeNotification object:nil];
+    // 通知接收时间变化的消息
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(countTimeNoti:) name:NNC_CountTimeNotification object:nil];
 
     // 通知处理方法
     - (void)countTimeNoti:(NSNotification *)noti {
